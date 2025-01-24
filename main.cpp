@@ -3,20 +3,22 @@ using namespace std;
 
 int main() {
     setlocale(LC_ALL, "russian");
-    const int size = 5;
+    int size
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°:";
+    cin >> size;
     int numbers[size];
     int sum = 0;
     int product = 1;
-    cout << "Ââåäèòå " << size << " ÷èñåë:" << endl;
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ " << size << "Ñ‡Ð¸ÑÐµÐ» :" << endl;
     for (int i = 0; i < size; i++) {
-        cout << "×èñëî " << (i + 1) << ": ";
+        cout << "Ã—Ã¨Ã±Ã«Ã® " << (i + 1) << ": ";
         cin >> numbers[i];
     }
     for (int i = 0; i < size; i++) {
         sum += numbers[i];
         product *= numbers[i];
     }
-    cout << "Ñóììà ÷èñåë: " << sum << endl;
-    cout << "Ïðîèçâåäåíèå ÷èñåë: " << product << endl;
+    cout << "Ð¡ÑƒÐ¼Ð¼Ð° Ñ‡Ð¸ÑÐµÐ»: " << sum << endl;
+    cout << "ÐŸÑ€Ð¾Ð¸Ð·Ð²ÐµÐ´ÐµÐ½Ð¸Ðµ Ñ‡Ð¸ÑÐµÐ» " << product << endl;
     return 0;
 }
